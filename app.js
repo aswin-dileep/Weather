@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const request = require('request');
 const app = express();
 require('dotenv').config();
-const key ="654c302bce3c08d025434466eee4cf8f";
+const key = process.env.API_KEY;
 let place,temp,feels_like,min,max,desc,icon,main;
 app.use(bodyParser.urlencoded({ extended: true }));
 
